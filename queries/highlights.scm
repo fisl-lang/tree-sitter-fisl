@@ -26,6 +26,7 @@
 "for"      @keyword
 "string"   @keyword
 "return"   @keyword
+"newline"  @keyword
 
 "use" @include
 
