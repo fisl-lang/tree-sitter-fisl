@@ -8,7 +8,7 @@
 // @ts-check
 
 module.exports = grammar({
-  name: "fislr",
+  name: "fisl",
 
   rules: {
     source_file: $ => repeat(seq($.line, "\n")),
