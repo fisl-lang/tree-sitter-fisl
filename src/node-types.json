@@ -240,6 +240,10 @@
     "named": false
   },
   {
+    "type": "use",
+    "named": false
+  },
+  {
     "type": "words",
     "named": false
   },

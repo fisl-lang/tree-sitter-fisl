@@ -34,6 +34,19 @@
           "members": [
             {
               "type": "STRING",
+              "value": "use"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "iden"
+            }
+          ]
+        },
+        {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "STRING",
               "value": "let"
             },
             {
