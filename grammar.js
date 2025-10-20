@@ -11,10 +11,10 @@ module.exports = grammar({
   name: "fisl",
 
   rules: {
-    source_file: $ => repeat(seq($.line, "\n")),
+    source_file: $ => repeat($.line),
     line: $ => choice($.statement, $.comment),
     comment: $ => /#.+?\n/,
-    statement: $ => seq(
+    statement: $ => choice(
       seq("let", $.var, "be", $.expr),
       seq("let", $.var, "be", $.expr, "plus",  $.expr),
       seq("let", $.var, "be", $.expr, "minus", $.expr),
@@ -41,7 +41,7 @@ module.exports = grammar({
     expr: $ => choice($.var, $.number),
     string: $ => seq('"', /[^"]*/, '"'),
     var: $ => $.iden,
-    iden: $ => /.+/,
+    iden: $ => /\w+/,
     number: $ => /[0-9]+/,
 
   }
