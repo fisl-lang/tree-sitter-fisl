@@ -20,10 +20,10 @@ module.exports = grammar({
       seq("let", $.var, "be", $.expr, "plus",  $.expr),
       seq("let", $.var, "be", $.expr, "minus", $.expr),
       seq("print", $.expr),
-      seq("label", $.iden),
-      seq("goto",  $.iden),
-      seq("if", $.compare, "goto", $.iden),
-      seq("if", $.compare, "call", $.iden),
+      seq("label", $.label),
+      seq("goto",  $.label),
+      seq("if", $.compare, "goto", $.label),
+      seq("if", $.compare, "call", $.label),
       seq("push", $.expr),
       seq("pull", $.expr),
       seq("call", $.iden),
@@ -39,10 +39,11 @@ module.exports = grammar({
     compare: $ => seq($.expr, choice(
       "equal", "unequal", "greater", "lesser"
     ), $.expr),
-    expr: $ => choice($.var, $.number),
+    expr:   $ => choice($.var, $.number),
     string: $ => seq('"', /[^"]*/, '"'),
-    var: $ => $.iden,
-    iden: $ => /\w+/,
+    var:    $ => $.iden,
+    label:  $ => $.iden,
+    iden:   $ => /\w+/,
     number: $ => /[0-9]+/,
 
   }

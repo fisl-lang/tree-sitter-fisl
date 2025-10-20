@@ -143,7 +143,7 @@
             },
             {
               "type": "SYMBOL",
-              "name": "iden"
+              "name": "label"
             }
           ]
         },
@@ -156,7 +156,7 @@
             },
             {
               "type": "SYMBOL",
-              "name": "iden"
+              "name": "label"
             }
           ]
         },
@@ -177,7 +177,7 @@
             },
             {
               "type": "SYMBOL",
-              "name": "iden"
+              "name": "label"
             }
           ]
         },
@@ -198,7 +198,7 @@
             },
             {
               "type": "SYMBOL",
-              "name": "iden"
+              "name": "label"
             }
           ]
         },
@@ -439,6 +439,10 @@
       ]
     },
     "var": {
+      "type": "SYMBOL",
+      "name": "iden"
+    },
+    "label": {
       "type": "SYMBOL",
       "name": "iden"
     },
