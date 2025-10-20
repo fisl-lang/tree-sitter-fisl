@@ -3,16 +3,36 @@
 (number)    @number
 (string)    @string
 (var)       @type
-(statement) @keyword
+(label)     @function
 
-"use"   @include
+"let"      @keyword
+"be"       @keyword
+"print"    @keyword
+"label"    @keyword
+"goto"     @keyword
+"if"       @keyword
+"call"     @keyword
+"push"     @keyword
+"pull"     @keyword
+"call"     @keyword
+"write"    @keyword
+"read"     @keyword
+"into"     @keyword
+"from"     @keyword
+"output"   @keyword
+"input"    @keyword
+"allocate" @keyword
+"words"    @keyword
+"for"      @keyword
+"string"   @keyword
+"return"   @keyword
+
+"use" @include
 
 
 (compare) @operator
 "plus"    @operator
 "minus"   @operator
-
-
 
 
 
