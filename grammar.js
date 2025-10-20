@@ -26,7 +26,7 @@ module.exports = grammar({
       seq("if", $.compare, "call", $.label),
       seq("push", $.expr),
       seq("pull", $.expr),
-      seq("call", $.iden),
+      seq("call", $.label),
       "return",
       seq("write", $.expr, "into", $.expr),
       seq("read",  $.var,  "from", $.expr),
