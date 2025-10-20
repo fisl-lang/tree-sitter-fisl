@@ -43,7 +43,7 @@ module.exports = grammar({
     string: $ => seq('"', /[^"]*/, '"'),
     var:    $ => $.iden,
     label:  $ => $.iden,
-    iden:   $ => /\w+/,
+    iden:   $ => /(\w|:|-)+/,
     number: $ => /[0-9]+/,
 
   }

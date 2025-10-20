@@ -448,7 +448,7 @@
     },
     "iden": {
       "type": "PATTERN",
-      "value": "\\w+"
+      "value": "(\\w|:|-)+"
     },
     "number": {
       "type": "PATTERN",
