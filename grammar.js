@@ -16,6 +16,7 @@ module.exports = grammar({
     comment: $ => /#.+?\n/,
     statement: $ => choice(
       seq("use", $.iden),
+      seq("let", $.var, "beknown"),
       seq("let", $.var, "be", $.expr),
       seq("let", $.var, "be", $.expr, "plus",  $.expr),
       seq("let", $.var, "be", $.expr, "minus", $.expr),

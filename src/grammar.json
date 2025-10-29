@@ -55,6 +55,23 @@
             },
             {
               "type": "STRING",
+              "value": "beknown"
+            }
+          ]
+        },
+        {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "let"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "var"
+            },
+            {
+              "type": "STRING",
               "value": "be"
             },
             {

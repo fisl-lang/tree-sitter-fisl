@@ -7,6 +7,7 @@
 
 "let"      @keyword
 "be"       @keyword
+"beknown"  @keyword
 "print"    @keyword
 "label"    @keyword
 "goto"     @keyword
