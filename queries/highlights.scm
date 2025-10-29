@@ -18,6 +18,7 @@
 "call"     @keyword
 "write"    @keyword
 "read"     @keyword
+"stream"   @keyword
 "into"     @keyword
 "from"     @keyword
 "output"   @keyword

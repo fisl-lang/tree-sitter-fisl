@@ -31,6 +31,8 @@ module.exports = grammar({
       "return",
       seq("write", $.expr, "into", $.expr),
       seq("read",  $.var,  "from", $.expr),
+      seq("stream", $.expr, "into", $.expr),
+      seq("stream", $.var,  "from", $.expr),
       seq("output", "newline"),
       seq("output", $.expr),
       seq("input",  $.var),

@@ -255,6 +255,10 @@
     "named": false
   },
   {
+    "type": "stream",
+    "named": false
+  },
+  {
     "type": "string",
     "named": false
   },
