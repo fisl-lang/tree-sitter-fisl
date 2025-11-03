@@ -47,6 +47,27 @@
           "members": [
             {
               "type": "STRING",
+              "value": "constant"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "iden"
+            },
+            {
+              "type": "STRING",
+              "value": "be"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "number"
+            }
+          ]
+        },
+        {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "STRING",
               "value": "let"
             },
             {
@@ -309,7 +330,7 @@
           "members": [
             {
               "type": "STRING",
-              "value": "stream"
+              "value": "write"
             },
             {
               "type": "SYMBOL",
@@ -322,6 +343,14 @@
             {
               "type": "SYMBOL",
               "name": "expr"
+            },
+            {
+              "type": "STRING",
+              "value": "at"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "iden"
             }
           ]
         },
@@ -330,7 +359,7 @@
           "members": [
             {
               "type": "STRING",
-              "value": "stream"
+              "value": "read"
             },
             {
               "type": "SYMBOL",
@@ -343,6 +372,14 @@
             {
               "type": "SYMBOL",
               "name": "expr"
+            },
+            {
+              "type": "STRING",
+              "value": "at"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "iden"
             }
           ]
         },

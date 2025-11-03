@@ -7,6 +7,7 @@
 
 "let"      @keyword
 "be"       @keyword
+"at"       @keyword
 "beknown"  @keyword
 "print"    @keyword
 "label"    @keyword
@@ -29,6 +30,7 @@
 "string"   @keyword
 "return"   @keyword
 "newline"  @keyword
+"constant" @keyword
 
 "use" @include
 

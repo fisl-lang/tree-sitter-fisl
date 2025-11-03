@@ -151,6 +151,10 @@
     "named": false
   },
   {
+    "type": "at",
+    "named": false
+  },
+  {
     "type": "be",
     "named": false
   },
@@ -165,6 +169,10 @@
   {
     "type": "comment",
     "named": true
+  },
+  {
+    "type": "constant",
+    "named": false
   },
   {
     "type": "equal",
@@ -252,10 +260,6 @@
   },
   {
     "type": "return",
-    "named": false
-  },
-  {
-    "type": "stream",
     "named": false
   },
   {
